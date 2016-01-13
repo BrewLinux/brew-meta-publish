@@ -35,9 +35,20 @@ Description: Latex packages
 Package: brew-meta-publish-latex
 Architecture: all
 Depends: brew-meta-publish-texlive,
+	 texlive-bibtex-extra,
+	 jabref,
 	 texmaker,
 	 ${misc:Depends}
 Description: Latex packages with ide
+ Provides texlive
+
+Package: brew-meta-publish-latex-de
+Architecture: all
+Depends: brew-meta-publish-latex,
+	 texlive-lang-german,
+	 texlive-doc-de,
+	 ${misc:Depends}
+Description: Latex packages with ide and language german
  Provides texlive
 
 Package: brew-meta-publish-office
