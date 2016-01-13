@@ -1,0 +1,57 @@
+Source: brew-meta-publish
+Section: metapackages
+Priority: optional
+Maintainer: c00clupea <c00clupea@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: <insert the upstream URL, if relevant>
+Vcs-Git: https://github.com/BrewLinux/brew-meta-publish.git
+Vcs-Browser: https://github.com/BrewLinux/brew-meta-publish.git
+
+Package: brew-meta-publish
+Architecture: all
+Depends: brew-vcs,
+	 brew-editors,
+	${shlibs:Depends}, ${misc:Depends}
+Description: Base package for publishing
+ Provides some basic tools for publishing
+
+Package: brew-meta-publish-texlive
+Architecture: all
+Depends: texlive,
+	 gnuplot,
+	 texlive-latex-extra,
+	 ${misc:Depends}
+Description: Latex packages
+ Provides texlive, but without language packages
+
+Package: brew-meta-publish-texlive-full
+Architecture: all
+Depends: texlive-full,
+	 ${misc:Depends}
+Description: Latex packages
+ Provides texlive
+
+Package: brew-meta-publish-latex
+Architecture: all
+Depends: brew-meta-publish-texlive,
+	 texmaker,
+	 ${misc:Depends}
+Description: Latex packages with ide
+ Provides texlive
+
+Package: brew-meta-publish-office
+Architecture: all
+Depends: libreoffice,
+	 ${misc:Depends}
+Description: libreoffice packages
+ Provides libreoffice
+
+Package: brew-meta-publish-diagram
+Architecture: all
+Depends: dia,
+	 r-base,
+	 gnuplot,
+	 ${misc:Depends}
+Description: diagram packages
+ Provides diagram tools
