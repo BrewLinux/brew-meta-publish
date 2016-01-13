@@ -1,3 +1,9 @@
+brew-meta-publish (1.0.1) unstable; urgency=medium
+
+  * +latex german + jabref
+
+ -- c00clupea <c00clupea@gmail.com>  Wed, 13 Jan 2016 18:57:47 +0100
+
 brew-meta-publish (1.0.0) unstable; urgency=low
 
   * Initial Release.
